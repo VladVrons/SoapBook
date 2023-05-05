@@ -27,6 +27,9 @@ namespace SB.BLL.Service
 			Users.Add(new User(password) { Name = name, Email = email} );
 		}
 
-		public void EditProfile() { }
+		public void EditProfile() 
+		{
+			
+		}
 	}
 }
