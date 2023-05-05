@@ -1,9 +1,5 @@
-C:\Users\asus\Documents\GitHub\SoapBook\Project\bin\Debug\netcoreapp3.0\app.config
-C:\Users\asus\Documents\GitHub\SoapBook\Project\bin\Debug\netcoreapp3.0\appsettings.json
 C:\Users\asus\Documents\GitHub\SoapBook\Project\bin\Debug\netcoreapp3.0\x64\ChakraCore.dll
-C:\Users\asus\Documents\GitHub\SoapBook\Project\bin\Debug\netcoreapp3.0\web.config
 C:\Users\asus\Documents\GitHub\SoapBook\Project\bin\Debug\netcoreapp3.0\tutorial-code.exe
-C:\Users\asus\Documents\GitHub\SoapBook\Project\bin\Debug\netcoreapp3.0\Views\Home\Index.cshtml
 C:\Users\asus\Documents\GitHub\SoapBook\Project\bin\Debug\netcoreapp3.0\tutorial-code.dll.config
 C:\Users\asus\Documents\GitHub\SoapBook\Project\bin\Debug\netcoreapp3.0\tutorial-code.deps.json
 C:\Users\asus\Documents\GitHub\SoapBook\Project\bin\Debug\netcoreapp3.0\tutorial-code.runtimeconfig.json
@@ -66,7 +62,6 @@ C:\Users\asus\Documents\GitHub\SoapBook\Project\obj\Debug\netcoreapp3.0\staticwe
 C:\Users\asus\Documents\GitHub\SoapBook\Project\obj\Debug\netcoreapp3.0\tutorial-code.TagHelpers.input.cache
 C:\Users\asus\Documents\GitHub\SoapBook\Project\obj\Debug\netcoreapp3.0\tutorial-code.TagHelpers.output.cache
 C:\Users\asus\Documents\GitHub\SoapBook\Project\obj\Debug\netcoreapp3.0\FrontEnd.RazorCoreGenerate.cache
-C:\Users\asus\Documents\GitHub\SoapBook\Project\obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\asus\Documents\GitHub\SoapBook\Project\obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\asus\Documents\GitHub\SoapBook\Project\obj\Debug\netcoreapp3.0\FrontEnd.RazorTargetAssemblyInfo.cache
 C:\Users\asus\Documents\GitHub\SoapBook\Project\obj\Debug\netcoreapp3.0\FrontEnd.RazorTargetAssemblyInfo.cs
@@ -75,3 +70,7 @@ C:\Users\asus\Documents\GitHub\SoapBook\Project\obj\Debug\netcoreapp3.0\FrontEnd
 C:\Users\asus\Documents\GitHub\SoapBook\Project\obj\Debug\netcoreapp3.0\tutorial-code.dll
 C:\Users\asus\Documents\GitHub\SoapBook\Project\obj\Debug\netcoreapp3.0\tutorial-code.pdb
 C:\Users\asus\Documents\GitHub\SoapBook\Project\obj\Debug\netcoreapp3.0\FrontEnd.genruntimeconfig.cache
+C:\Users\asus\Documents\GitHub\SoapBook\Project\bin\Debug\netcoreapp3.0\Props\app.config
+C:\Users\asus\Documents\GitHub\SoapBook\Project\bin\Debug\netcoreapp3.0\Props\web.config
+C:\Users\asus\Documents\GitHub\SoapBook\Project\bin\Debug\netcoreapp3.0\Props\appsettings.json
+C:\Users\asus\Documents\GitHub\SoapBook\Project\obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs
