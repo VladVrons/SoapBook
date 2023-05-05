@@ -1,2 +1,3 @@
 \.vs
 SB.DAL\obj
+*.cache

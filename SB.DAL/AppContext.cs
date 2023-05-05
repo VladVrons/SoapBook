@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore;
+using SB.DAL.Models;
 
 namespace SB.DAL
 {
-	internal class AppContext
+	public class AppContext : DbContext
 	{
+		public DbSet<User> Users { get; set; }
+
+
+		public AppContext(DbContextOptions<AppContext> options) : base(options)
+		{
+			Database.EnsureCreated();
+		}
 	}
 }
