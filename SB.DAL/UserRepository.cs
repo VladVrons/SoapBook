@@ -19,16 +19,16 @@ namespace SB.DAL
 			return model;
 		}
 
-		public void Delete(int id)
+		public void Delete(string email)
 		{
-			var toDelete = Context.Set<User>().FirstOrDefault(m => m.Id == id);
+			var toDelete = Context.Set<User>().FirstOrDefault(m => m.Email == email);
 			Context.Set<User>().Remove(toDelete);
 			Context.SaveChanges();
 		}
 
-		public User Get(int id)
+		public User Get(string Email)
 		{
-			return Context.Set<User>().FirstOrDefault(m => m.Id == id);
+			return Context.Set<User>().FirstOrDefault(m => m.Email == Email);
 		}
 
 		public List<User> GetAll()
@@ -38,7 +38,7 @@ namespace SB.DAL
 
 		public User Update(User model)
 		{
-			var toUpdate = Context.Set<User>().FirstOrDefault(m => m.Id == model.Id);
+			var toUpdate = Context.Set<User>().FirstOrDefault(m => m.Email == model.Email);
 			if (toUpdate != null)
 			{
 				toUpdate = model;
