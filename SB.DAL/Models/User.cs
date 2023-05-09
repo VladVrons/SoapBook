@@ -15,7 +15,7 @@ namespace SB.DAL.Models
 		public List<string> Tags { get; set; }
 		public User(string pass) 
 		{
-			
+			Password = pass;
 		}
 
 		public bool PassCheck(string pass)
