@@ -8,7 +8,7 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<None Include="Props\app.config" />
-		<None Include="wwwroot\index.css" />
+		<None Include="wwwroot\css\index.css" />
 		<None Include="wwwroot\index.html" />
 		<None Update="wwwroot\**\*;Views\**\*;Areas\**\Views">
 			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
@@ -26,10 +26,9 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\Home\" />
-	  <Folder Include="wwwroot\LogIn\" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Content Update="wwwroot\index.css">
+	  <Content Update="wwwroot\css\index.css">
 	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
 	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
 	  </Content>

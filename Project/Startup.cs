@@ -15,6 +15,7 @@ namespace ReactDemo
 			services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 			services.AddReact();
 			services.AddJsEngineSwitcher(options => options.DefaultEngineName = ChakraCoreJsEngine.EngineName).AddChakraCore();
+			services.AddControllers();	
 		}
 
 		public void Configure(IApplicationBuilder app)
@@ -24,6 +25,12 @@ namespace ReactDemo
 			app.UseReact(config => { });
 			app.UseDefaultFiles();
 			app.UseStaticFiles();
+
+			app.UseRouting();
+			app.UseEndpoints(endpoints =>
+			{
+				endpoints.MapControllers();
+			});
 		}
 	}
 }
