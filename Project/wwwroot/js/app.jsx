@@ -43,8 +43,8 @@ class PhoneForm extends React.Component {
     }
     render() {
         return (
-
-            <form action="homepage.html" onSubmit={this.onSubmit} >
+            <div>
+                <form onSubmit={this.onSubmit} >
                 <label for="username">Username</label>
                 <input  
                     value={this.state.name}
@@ -57,9 +57,11 @@ class PhoneForm extends React.Component {
                         onChange={this.onPriceChange}
                         type="password" id="password" name="password" required />
 
-                <input type="submit" value="Login" onClick='location.href="homepage.html"' /> 
-               
+                <input type="submit" value="Login" onClick='location.href="homepage.html"' />
+                
             </form>
+               
+            </div>
         );
     }
 }
@@ -127,13 +129,15 @@ class PhonesList extends React.Component {
         var remove = this.onRemovePhone;
         return <div>
             <PhoneForm onPhoneSubmit={this.onAddPhone} />
-            <h2>List of phones0</h2>
+            
             <div>
+                
                 {
                     this.state.phones.map(function (phone) {
 
                         return <Phone key={phone.id} phone={phone} onRemove={remove} />
                     })
+                   
                 }
             </div>
         </div>;
