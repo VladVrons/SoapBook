@@ -1,0 +1,15 @@
+C:\Users\asus\Documents\GitHub\SoapBook\SB.BLL\bin\Debug\net6.0\SB.BLL.deps.json
+C:\Users\asus\Documents\GitHub\SoapBook\SB.BLL\bin\Debug\net6.0\SB.BLL.dll
+C:\Users\asus\Documents\GitHub\SoapBook\SB.BLL\bin\Debug\net6.0\SB.BLL.pdb
+C:\Users\asus\Documents\GitHub\SoapBook\SB.BLL\bin\Debug\net6.0\SB.DAL.dll
+C:\Users\asus\Documents\GitHub\SoapBook\SB.BLL\bin\Debug\net6.0\SB.DAL.pdb
+C:\Users\asus\Documents\GitHub\SoapBook\SB.BLL\obj\Debug\net6.0\SB.BLL.csproj.AssemblyReference.cache
+C:\Users\asus\Documents\GitHub\SoapBook\SB.BLL\obj\Debug\net6.0\SB.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Documents\GitHub\SoapBook\SB.BLL\obj\Debug\net6.0\SB.BLL.AssemblyInfoInputs.cache
+C:\Users\asus\Documents\GitHub\SoapBook\SB.BLL\obj\Debug\net6.0\SB.BLL.AssemblyInfo.cs
+C:\Users\asus\Documents\GitHub\SoapBook\SB.BLL\obj\Debug\net6.0\SB.BLL.csproj.CoreCompileInputs.cache
+C:\Users\asus\Documents\GitHub\SoapBook\SB.BLL\obj\Debug\net6.0\SB.BLL.csproj.CopyComplete
+C:\Users\asus\Documents\GitHub\SoapBook\SB.BLL\obj\Debug\net6.0\SB.BLL.dll
+C:\Users\asus\Documents\GitHub\SoapBook\SB.BLL\obj\Debug\net6.0\refint\SB.BLL.dll
+C:\Users\asus\Documents\GitHub\SoapBook\SB.BLL\obj\Debug\net6.0\SB.BLL.pdb
+C:\Users\asus\Documents\GitHub\SoapBook\SB.BLL\obj\Debug\net6.0\ref\SB.BLL.dll

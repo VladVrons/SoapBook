@@ -29,6 +29,7 @@ namespace FrontEnd.Controllers
 		{
 			phone.Id = Guid.NewGuid().ToString();
 			data.Add(phone);
+			Console.WriteLine(data.LastOrDefault());
 			return Ok(phone);
 		}
 

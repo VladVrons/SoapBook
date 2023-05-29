@@ -1,0 +1,12 @@
+C:\Users\asus\Documents\GitHub\SoapBook\SB.DAL\bin\Debug\net6.0\SB.DAL.deps.json
+C:\Users\asus\Documents\GitHub\SoapBook\SB.DAL\bin\Debug\net6.0\SB.DAL.dll
+C:\Users\asus\Documents\GitHub\SoapBook\SB.DAL\bin\Debug\net6.0\SB.DAL.pdb
+C:\Users\asus\Documents\GitHub\SoapBook\SB.DAL\obj\Debug\net6.0\SB.DAL.csproj.AssemblyReference.cache
+C:\Users\asus\Documents\GitHub\SoapBook\SB.DAL\obj\Debug\net6.0\SB.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Documents\GitHub\SoapBook\SB.DAL\obj\Debug\net6.0\SB.DAL.AssemblyInfoInputs.cache
+C:\Users\asus\Documents\GitHub\SoapBook\SB.DAL\obj\Debug\net6.0\SB.DAL.AssemblyInfo.cs
+C:\Users\asus\Documents\GitHub\SoapBook\SB.DAL\obj\Debug\net6.0\SB.DAL.csproj.CoreCompileInputs.cache
+C:\Users\asus\Documents\GitHub\SoapBook\SB.DAL\obj\Debug\net6.0\SB.DAL.dll
+C:\Users\asus\Documents\GitHub\SoapBook\SB.DAL\obj\Debug\net6.0\refint\SB.DAL.dll
+C:\Users\asus\Documents\GitHub\SoapBook\SB.DAL\obj\Debug\net6.0\SB.DAL.pdb
+C:\Users\asus\Documents\GitHub\SoapBook\SB.DAL\obj\Debug\net6.0\ref\SB.DAL.dll

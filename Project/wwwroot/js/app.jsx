@@ -45,20 +45,22 @@ class PhoneForm extends React.Component {
     }
     render() {
         return (
-            <form onSubmit={this.onSubmit}>
-                <p>
-                    <input type="text"
-                        placeholder="Model"
-                        value={this.state.name}
-                        onChange={this.onNameChange} />
-                </p>
-                <p>
-                    <input type="number"
-                        placeholder="Price"
+
+            <form action="homepage.html" onSubmit={this.onSubmit} >
+                <label for="username">Username</label>
+                <input 
+                    value={this.state.name}
+                    onChange={this.onNameChange}
+                    type="text" id="username" name="username" required />
+
+                    <label for="password">Password</label>
+                    <input 
                         value={this.state.price}
-                        onChange={this.onPriceChange} />
-                </p>
-                <input type="submit" value="Save" />
+                        onChange={this.onPriceChange}
+                        type="password" id="password" name="password" required />
+
+                <input type="submit" value="Login" /> 
+               
             </form>
         );
     }
