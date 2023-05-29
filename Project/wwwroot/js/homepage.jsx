@@ -51,7 +51,7 @@ class UserForm extends React.Component {
     onSubmit(e) {
         e.preventDefault();
         var userName = this.state.name.trim();
-        var userEmail = this.state.email;
+        var userEmail = "aa";
         if (!userName || !userEmail) {
             return;
         }
@@ -61,7 +61,15 @@ class UserForm extends React.Component {
     render() {
         return (
 
-            <div></div>
+            <form class="search" onSubmit={this.onSubmit}>
+                <input  
+                    value={this.state.name}
+                    onChange={this.onNameChange}
+                    type="text" id="username" name="username" required />
+
+                <input type="submit" value="Search..."  /> 
+              
+            </form>
         );
     }
 }
@@ -129,8 +137,8 @@ class UsersList extends React.Component {
         var remove = this.onRemoveUser;
         return <div>
             <UserForm onUserSubmit={this.onAddUser} />
-            <h2>List of users2</h2>
-            <div>
+            <h2>List of users</h2>
+            <div class="post">
                 {
                     this.state.users.map(function (user) {
 

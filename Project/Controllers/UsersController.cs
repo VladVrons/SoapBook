@@ -33,6 +33,7 @@ namespace FrontEnd.Controllers
 		{
 			
 			users.Add(user);
+			Console.WriteLine("added "+user.Name+user.Email);
 			return Ok(user);
 		}
 
