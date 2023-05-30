@@ -1,0 +1,110 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Network Homepage</title>
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>SoapBook</h1>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+
+                <li><a id="username" href="#">Messages</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+    <main>
+        <section class="news-feed">
+            <article class="post">
+                <h1>Edit account</h1>
+                <form id="s1s" method="post">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <label for="tags">Interests</label>
+                    <input type="text" id="tags" name="tags" required >
+
+                    <input type="submit" value="Save" id="submitBtn">
+
+                </form>
+                <script>
+
+                    fetch('/api/getname')
+                        .then(response => response.json())
+                        .then(data => {
+
+                            document.getElementById('username').innerText = data.name;
+
+                            document.getElementById('usernameprof').innerText = data.name;;
+                            document.getElementById('tag').innerText = data.tags;
+                            document.getElementById('email').innerText = data.email;
+                        })
+                        .catch(error => {
+                            // Обробка помилок
+                            console.error('Помилка:', error);
+                        });
+
+                </script>
+
+                <script>
+
+                    const form = document.querySelector('form');
+                    // Add event listener to the form submission event
+                    form.addEventListener('submit', (e) => {
+                        e.preventDefault(); // Prevent default form submission behavior
+
+                        // Collect form data
+                        const formData = new FormData(form);
+
+                        // Send POST request to the backend API endpoint
+                        fetch('/api/edit', {
+                            method: 'POST',
+                            body: formData
+                        })
+                            .then(response => {
+                                if (response.ok) {
+
+                                    // Redirect to the front page (homepage.html)
+                                    window.location.href = 'userprofile.html';
+                                } else {
+                                    throw new Error('Error occurred while posting the data.');
+                                }
+                            })
+                            .catch(error => {
+                                console.error(error);
+                            });
+                    });
+                </script>
+            </article>
+
+
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/16.11.0/umd/react.development.js"></script>
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.11.0/umd/react-dom.development.js"></script>
+    <script src="js/homepage.jsx"></script>
+</body>
+</html>

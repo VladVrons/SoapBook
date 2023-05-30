@@ -12,7 +12,7 @@ namespace SB.DAL.Models
 		public string Name { get; set; }
 		public string Email { get; set; }
 		private string Password { get; set; }
-		public List<string> Tags { get; set; }
+		public string Tags { get; set; }
 		public User(string pass) 
 		{
 			Password = pass;
@@ -24,6 +24,11 @@ namespace SB.DAL.Models
 			{
 				return true;
 			}else return false;
+		}
+
+		public void ChangePass(string pass)
+		{
+			Password = pass;
 		}
 	}
 }

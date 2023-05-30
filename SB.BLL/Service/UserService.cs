@@ -9,7 +9,10 @@ namespace SB.BLL.Service
 		public User activeUser;
 		private IRepository<User> Users { get; set; }
 
-		public UserService() { }
+		public UserService() 
+		{ 
+			activeUser = new User("1111") { Name = "Guest", Email = "guest@gmail.com", Tags =  "searching web"  };
+		}
 		public bool LogIn(string name, string pass)
 		{
 			var user = Users.Get(name);
@@ -26,6 +29,7 @@ namespace SB.BLL.Service
 
 		public void SignUp(string name, string email, string password)
 		{
+			var user = new User(password) { Name = name, Email = email };
 			Users.Add(new User(password) { Name = name, Email = email} );
 		}
 

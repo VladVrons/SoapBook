@@ -4,7 +4,7 @@ using System;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using SB.BLL.Service;
-//using SB.BLL.Service;
+using System.Xml.Linq;
 
 namespace FrontEnd.Controllers
 {
@@ -13,7 +13,7 @@ namespace FrontEnd.Controllers
 	{
 		//public UserService userService { get; set; }
 		static readonly List<UserModel> users;
-		static UserService userService;
+		static UserService userService = new UserService();
 		//public User user;
 		
 		static UsersController()
@@ -29,38 +29,45 @@ namespace FrontEnd.Controllers
 
 	
 		[HttpGet]
-		public IEnumerable<UserModel> Get()
+		[Route("api/getname")]
+		public UserModel Get()
 		{
-			return users;
+			UserModel user = new UserModel("1111")
+			{
+				Name = userService.activeUser.Name,
+				Email = userService.activeUser.Email,
+				Tags = userService.activeUser.Tags
+			};
+			return user;
 		}
 
 		[HttpPost]
 		[Route("api/login")]
 		public void Login(string username, string password)
 		{
-			//users.Add(new UserModel(password) { Name = username});
+			userService.activeUser.Name = username;
 			Console.WriteLine(username);
-			//users.Add(user);
-			//Console.WriteLine("added "+user.Name+user.Email);
-			//return Ok(user);
+		
 		
 		}
 		[HttpPost]
 		[Route("api/signup")]
-		public void SignUp(string username, string password)
+		public ActionResult SignUp(string username, string password, string email)
 		{
-			users.Add(new UserModel(password) { Name = username });
-			Console.WriteLine(username);
-			//users.Add(user);
-			//Console.WriteLine("added "+user.Name+user.Email);
-			//return Ok(user);
+			users.Add(new UserModel(password) { Name = username, Email= email });
+			Console.WriteLine(username+email);
+			return Ok(email);
 
 		}
 
-		public class Person
+		[HttpPost]
+		[Route("api/edit")]
+		public void Edit(string username,string email, string password, string tags)
 		{
-			public string name { get; set; }
-			public string surname { get; set; }
+			userService.activeUser.Name = username;
+			userService.activeUser.Email = email;
+			userService.activeUser.Tags = tags;
+			userService.activeUser.ChangePass(password);				
 		}
 
 		public ActionResult Homepage()

@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\css\\homepage.css"
     },
     {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\editprofile.html",
+      "PackagePath": "staticwebassets\\editprofile.html"
+    },
+    {
       "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\homepage.html",
       "PackagePath": "staticwebassets\\homepage.html"
     },
@@ -15,6 +19,14 @@
     {
       "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\js\\homepage.jsx",
       "PackagePath": "staticwebassets\\js\\homepage.jsx"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\login.html",
+      "PackagePath": "staticwebassets\\login.html"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\userprofile.html",
+      "PackagePath": "staticwebassets\\userprofile.html"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Front.Microsoft.AspNetCore.StaticWebAssets.props",

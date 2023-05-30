@@ -31,7 +31,7 @@ form {
 label {
     margin-top: 10px;
 }
-
+input[type="email"],
 input[type="text"],
 input[type="password"] {
     padding: 10px;
@@ -54,3 +54,5 @@ input[type="submit"] {
     input[type="submit"]:hover {
         background-color: #3e8e41;
     }
+
+    

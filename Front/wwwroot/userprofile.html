@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html>
 <head>
     <title>Social Network Homepage</title>
@@ -17,19 +18,21 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-            
+
                 <li><a id="username" href="#">Messages</a></li>
             </ul>
         </nav>
         <script>
-            
+
             fetch('/api/getname')
                 .then(response => response.json())
                 .then(data => {
-                    // Тут ви можете використовувати отримані дані
-                    alert(typeof (data));
-                    console.log(data);
-                    document.getElementById('username').innerText = String(data).toUpperCase;
+                    
+                    document.getElementById('username').innerText = data.name;
+
+                    document.getElementById('usernameprof').innerText = data.name;;
+                    document.getElementById('tag').innerText = data.tags;
+                    document.getElementById('email').innerText = data.email;
                 })
                 .catch(error => {
                     // Обробка помилок
@@ -38,32 +41,29 @@
 
         </script>
     </header>
-    <main >
+    <main>
         <section class="news-feed">
             <article class="post">
                 <div class="post-header">
                     <img src="profile-pic.jpg" alt="Profile Picture">
-                    <h3>User Name</h3>
-                    <span>1 hour ago</span>
+                    <h3 id="usernameprof">User Name</h3>
+
+                    <span id="email">1 hour ago</span>
                 </div>
                 <div class="post-content">
-                    <p>This is a post from User Name.</p>
-                    <img src="post-image.jpg" alt="Post Image">
+                    <p>My interests:</p>
+                    <p id="tag"> </p>
                 </div>
                 <div class="post-footer">
                     <ul>
-                        <li><a href="#">Like</a></li>
-                        <li><a href="#">Comment</a></li>
-                        <li><a href="#">Share</a></li>
+                        <li><a href="editprofile.html">Edit</a></li>
+                       
                     </ul>
                 </div>
-
+               
             </article>
+
            
-            <article class="post">
-                <div id="s1s"> </div>
-
-            </article>
         </section>
     </main>
     <footer>
@@ -73,7 +73,7 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </footer>
-    
+
     <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/16.11.0/umd/react.development.js"></script>
     <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.11.0/umd/react-dom.development.js"></script>
     <script src="js/homepage.jsx"></script>

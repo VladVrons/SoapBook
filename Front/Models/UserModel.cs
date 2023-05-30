@@ -7,7 +7,7 @@ namespace FrontEnd.Models
 		public string Name { get; set; }
 		public string Email { get; set; }
 		private string Password { get; set; }
-		public List<string> Tags { get; set; } 
+		public string Tags { get; set; } 
 		public UserModel(string pass) 
 		{
 			Password = pass;	

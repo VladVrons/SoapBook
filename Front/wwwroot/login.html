@@ -2,24 +2,22 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Welcome</title>
-    <link rel="stylesheet" href="/css/index.css"/>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/index.css" />
 </head>
 <body>
     <div class="container">
-        <h1>Create account</h1>
+        <h1>Login</h1>
         <form id="s1s" method="post">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" required>
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" required>
+
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
 
             <input type="submit" value="Login" id="submitBtn">
 
         </form>
-
         <script>
             const form = document.querySelector('form');
 
@@ -31,13 +29,13 @@
                 const formData = new FormData(form);
 
                 // Send POST request to the backend API endpoint
-                fetch('/api/signup', {
+                fetch('/api/login', {
                     method: 'POST',
                     body: formData
                 })
                     .then(response => {
                         if (response.ok) {
-
+                            
                             // Redirect to the front page (homepage.html)
                             window.location.href = 'userprofile.html';
                         } else {
@@ -49,14 +47,15 @@
                     });
             });
         </script>
-        <div style="right:250px">
-            <a href="login.html"> already have an account? </a>
-        </div>
+
+
+
+
     </div>
 
 
     <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/16.11.0/umd/react.development.js"></script>
     <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.11.0/umd/react-dom.development.js"></script>
-    <script src="js/app2.jsx"></script>
+    <script src="js/app1.jsx"></script>
 </body>
 </html>

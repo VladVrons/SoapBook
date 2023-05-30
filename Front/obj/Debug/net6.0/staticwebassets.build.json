@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PhNGJE1Xne6efgmbZaOiSZQp/wW2LnOg8Ey8f+sKv1o=",
+  "Hash": "gXpFguJz0rdO/BkiMEPI20vL/pBOjL6Ahj8MLW0Zd7I=",
   "Source": "Front",
   "BasePath": "_content/Front",
   "Mode": "Default",
@@ -32,6 +32,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\homepage.css"
+    },
+    {
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\editprofile.html",
+      "SourceId": "Front",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\",
+      "BasePath": "_content/Front",
+      "RelativePath": "editprofile.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\editprofile.html"
     },
     {
       "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\homepage.html",
@@ -83,6 +100,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\homepage.jsx"
+    },
+    {
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\login.html",
+      "SourceId": "Front",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\",
+      "BasePath": "_content/Front",
+      "RelativePath": "login.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\login.html"
+    },
+    {
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\userprofile.html",
+      "SourceId": "Front",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\",
+      "BasePath": "_content/Front",
+      "RelativePath": "userprofile.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\userprofile.html"
     }
   ]
 }
