@@ -74,3 +74,4 @@ C:\Users\asus\Documents\GitHub\SoapBook\Project\obj\Debug\netcoreapp3.0\FrontEnd
 C:\Users\asus\Documents\GitHub\SoapBook\Project\obj\Debug\netcoreapp3.0\tutorial-code.dll
 C:\Users\asus\Documents\GitHub\SoapBook\Project\obj\Debug\netcoreapp3.0\tutorial-code.pdb
 C:\Users\asus\Documents\GitHub\SoapBook\Project\obj\Debug\netcoreapp3.0\FrontEnd.genruntimeconfig.cache
+C:\Users\asus\Documents\GitHub\SoapBook\Project\obj\Debug\netcoreapp3.0\Razor\Views\Users\Homepage.cshtml.g.cs

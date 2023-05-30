@@ -6,12 +6,13 @@ using System.Linq;
 
 namespace FrontEnd.Controllers
 {
-	[Route("api/[controller]")]
+	//[Route("api/[controller]")]
 	public class UsersController : Controller	
 	{
 		
 		static readonly List<UserModel> users;
-		
+		private UserServise userServise;
+
 		static UsersController()
 		{
 			users = new List<UserModel>
@@ -22,6 +23,7 @@ namespace FrontEnd.Controllers
 
 		}
 
+	
 		[HttpGet]
 		public IEnumerable<UserModel> Get()
 		{
@@ -29,12 +31,26 @@ namespace FrontEnd.Controllers
 		}
 
 		[HttpPost]
-		public IActionResult Post(UserModel user)
+		[Route("api/login")]
+		public void Login(string username, string password)
+		{
+			Console.WriteLine(username);
+			//users.Add(user);
+			//Console.WriteLine("added "+user.Name+user.Email);
+			//return Ok(user);
+		
+		}
+
+		public class Person
+		{
+			public string name { get; set; }
+			public string surname { get; set; }
+		}
+
+		public ActionResult Homepage()
 		{
 			
-			users.Add(user);
-			Console.WriteLine("added "+user.Name+user.Email);
-			return Ok(user);
+			return View();
 		}
 
 		[HttpDelete("{id}")]
