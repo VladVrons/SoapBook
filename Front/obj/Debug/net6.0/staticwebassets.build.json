@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "PhNGJE1Xne6efgmbZaOiSZQp/wW2LnOg8Ey8f+sKv1o=",
+  "Source": "Front",
+  "BasePath": "_content/Front",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Front\\wwwroot",
+      "Source": "Front",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\",
+      "BasePath": "_content/Front",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\css\\homepage.css",
+      "SourceId": "Front",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\",
+      "BasePath": "_content/Front",
+      "RelativePath": "css/homepage.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\homepage.css"
+    },
+    {
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\homepage.html",
+      "SourceId": "Front",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\",
+      "BasePath": "_content/Front",
+      "RelativePath": "homepage.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\homepage.html"
+    },
+    {
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\js\\app.jsx",
+      "SourceId": "Front",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\",
+      "BasePath": "_content/Front",
+      "RelativePath": "js/app.jsx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\app.jsx"
+    },
+    {
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\js\\homepage.jsx",
+      "SourceId": "Front",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\",
+      "BasePath": "_content/Front",
+      "RelativePath": "js/homepage.jsx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\homepage.jsx"
+    }
+  ]
+}

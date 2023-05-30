@@ -25,9 +25,9 @@ namespace SB.DAL.Repositories
             Context.SaveChanges();
         }
 
-        public User Get(string Email)
+        public User Get(string name)
         {
-            return Context.Set<User>().FirstOrDefault(m => m.Email == Email);
+            return Context.Set<User>().FirstOrDefault(m => m.Name == name);
         }
 
         public List<User> GetAll()

@@ -6,11 +6,13 @@ namespace SB.BLL.Service
 {
 	public class UserService
 	{
+		public User activeUser;
 		private IRepository<User> Users { get; set; }
 
-		public bool LogIn(string email, string pass)
+		public UserService() { }
+		public bool LogIn(string name, string pass)
 		{
-			var user = Users.Get(email);
+			var user = Users.Get(name);
 			if (user == null)
 			{
 				return false;
@@ -27,9 +29,9 @@ namespace SB.BLL.Service
 			Users.Add(new User(password) { Name = name, Email = email} );
 		}
 
-		public void EditProfile() 
+		public void EditProfile(User user) 
 		{
-			
+			activeUser = user;
 		}
 	}
 }

@@ -1,0 +1,10 @@
+C:\Users\asus\Documents\GitHub\SoapBook\SB.Back\bin\Debug\netcoreapp3.1\SB.Back.deps.json
+C:\Users\asus\Documents\GitHub\SoapBook\SB.Back\bin\Debug\netcoreapp3.1\SB.Back.dll
+C:\Users\asus\Documents\GitHub\SoapBook\SB.Back\bin\Debug\netcoreapp3.1\SB.Back.pdb
+C:\Users\asus\Documents\GitHub\SoapBook\SB.Back\obj\Debug\netcoreapp3.1\SB.Back.csproj.AssemblyReference.cache
+C:\Users\asus\Documents\GitHub\SoapBook\SB.Back\obj\Debug\netcoreapp3.1\SB.Back.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Documents\GitHub\SoapBook\SB.Back\obj\Debug\netcoreapp3.1\SB.Back.AssemblyInfoInputs.cache
+C:\Users\asus\Documents\GitHub\SoapBook\SB.Back\obj\Debug\netcoreapp3.1\SB.Back.AssemblyInfo.cs
+C:\Users\asus\Documents\GitHub\SoapBook\SB.Back\obj\Debug\netcoreapp3.1\SB.Back.csproj.CoreCompileInputs.cache
+C:\Users\asus\Documents\GitHub\SoapBook\SB.Back\obj\Debug\netcoreapp3.1\SB.Back.dll
+C:\Users\asus\Documents\GitHub\SoapBook\SB.Back\obj\Debug\netcoreapp3.1\SB.Back.pdb
