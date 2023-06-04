@@ -21,8 +21,8 @@ namespace FrontEnd.Controllers
 			
 			users = new List<UserModel>
 			{
-				new UserModel("123") { Email = Guid.NewGuid().ToString(), Name="Tyler"  },
-				new UserModel("321") { Email = Guid.NewGuid().ToString(), Name="Ed" },
+				new UserModel("123") { Email = "soap@gmail.com", Name="Tyler", Tags="fight, smoke"},
+				new UserModel("321") { Email = "ed.n@gmail.com", Name="Ed", Tags="fight, ikea"},
 			};
 
 		}
@@ -32,7 +32,8 @@ namespace FrontEnd.Controllers
 		[Route("api/getname")]
 		public UserModel Get()
 		{
-			UserModel user = new UserModel("1111")
+			
+			UserModel user = new UserModel(userService.activeUser.Password)
 			{
 				Name = userService.activeUser.Name,
 				Email = userService.activeUser.Email,
@@ -52,10 +53,11 @@ namespace FrontEnd.Controllers
 		}
 		[HttpPost]
 		[Route("api/signup")]
+
 		public ActionResult SignUp(string username, string password, string email)
 		{
 			users.Add(new UserModel(password) { Name = username, Email= email });
-			Console.WriteLine(username+email);
+			userService.activeUser = new (password) { Name = username, Email = email };
 			return Ok(email);
 
 		}
@@ -70,10 +72,18 @@ namespace FrontEnd.Controllers
 			userService.activeUser.ChangePass(password);				
 		}
 
-		public ActionResult Homepage()
+		[HttpPost]
+		[Route("api/search")]
+		public List<UserModel> Search(string substring)
 		{
-			
-			return View();
+			List<UserModel> userList = new List<UserModel>();
+			foreach(var user in users) 
+			{
+				if(user.Tags.Contains(substring) || (user.Name.Contains(substring)))
+				{ userList.Add(user); }
+
+			}
+			return userList;
 		}
 
 		[HttpDelete("{id}")]
@@ -87,6 +97,7 @@ namespace FrontEnd.Controllers
 			users.Remove(user);
 			return Ok(user);
 		}
+
 
 	}
 }

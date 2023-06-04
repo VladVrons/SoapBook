@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gXpFguJz0rdO/BkiMEPI20vL/pBOjL6Ahj8MLW0Zd7I=",
+  "Hash": "LV11UbiS/6ABVF92YRlUKKiW22K523HvPTFjp2R0AwI=",
   "Source": "Front",
   "BasePath": "_content/Front",
   "Mode": "Default",
@@ -32,6 +32,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\homepage.css"
+    },
+    {
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\css\\message.css",
+      "SourceId": "Front",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\",
+      "BasePath": "_content/Front",
+      "RelativePath": "css/message.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\message.css"
     },
     {
       "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\editprofile.html",
@@ -66,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\homepage.html"
+    },
+    {
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\img\\god`s_creation.jpg",
+      "SourceId": "Front",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\",
+      "BasePath": "_content/Front",
+      "RelativePath": "img/god`s_creation.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\god`s_creation.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\img\\profile_pic.png",
+      "SourceId": "Front",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\",
+      "BasePath": "_content/Front",
+      "RelativePath": "img/profile_pic.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\profile_pic.png"
     },
     {
       "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\js\\app.jsx",
@@ -117,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\login.html"
+    },
+    {
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\message.html",
+      "SourceId": "Front",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\",
+      "BasePath": "_content/Front",
+      "RelativePath": "message.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\message.html"
     },
     {
       "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\userprofile.html",

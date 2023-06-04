@@ -17,6 +17,7 @@
     <None Include="wwwroot\css\index.css">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </None>
+    <None Include="wwwroot\img\profile_pic.png" />
     <None Include="wwwroot\index.html">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </None>

@@ -5,12 +5,24 @@
       "PackagePath": "staticwebassets\\css\\homepage.css"
     },
     {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\css\\message.css",
+      "PackagePath": "staticwebassets\\css\\message.css"
+    },
+    {
       "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\editprofile.html",
       "PackagePath": "staticwebassets\\editprofile.html"
     },
     {
       "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\homepage.html",
       "PackagePath": "staticwebassets\\homepage.html"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\img\\god`s_creation.jpg",
+      "PackagePath": "staticwebassets\\img\\god`s_creation.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\img\\profile_pic.png",
+      "PackagePath": "staticwebassets\\img\\profile_pic.png"
     },
     {
       "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\js\\app.jsx",
@@ -23,6 +35,10 @@
     {
       "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\login.html",
       "PackagePath": "staticwebassets\\login.html"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\message.html",
+      "PackagePath": "staticwebassets\\message.html"
     },
     {
       "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\userprofile.html",

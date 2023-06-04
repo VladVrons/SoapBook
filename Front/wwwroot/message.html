@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Message Page</title>
+    <link rel="stylesheet" type="text/css" href="css/message.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>SoapBook</h1>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+
+                <li><a id="username" href="#">Messages</a></li>
+            </ul>
+        </nav>
+        <script>
+
+            fetch('/api/getname')
+                .then(response => response.json())
+                .then(data => {
+
+                    document.getElementById('username').innerText = data.name;
+                })
+                .catch(error => {
+                    // Обробка помилок
+                    console.error('Помилка:', error);
+                });
+
+        </script>
+    </header>
+    <main>
+        <section class="news-feed">
+            <article class="post">
+                <h3 id="usernameprof">Tyler</h3>
+                <div class="container">
+
+                    <div class="messages" id="messages">
+                        <!-- Existing messages will be displayed here -->
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="message-input" placeholder="Type your message">
+                        <button id="send-button">Send</button>
+                    </div>
+                </div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var sendButton = document.getElementById('send-button');
+                        var messageInput = document.getElementById('message-input');
+                        var messagesDiv = document.getElementById('messages');
+
+                        sendButton.addEventListener('click', function () {
+                            var message = messageInput.value;
+                            if (message.trim() !== '') {
+                                var messageElement = document.createElement('div');
+                                messageElement.classList.add('message');
+                                messageElement.textContent = message;
+                                messageElement.className = 'post';
+                                messagesDiv.appendChild(messageElement);
+                                messageInput.value = '';
+                            }
+                        });
+                    });
+
+                </script>
+
+            </article>
+
+
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/16.11.0/umd/react.development.js"></script>
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.11.0/umd/react-dom.development.js"></script>
+    
+</body>
+
+</html>

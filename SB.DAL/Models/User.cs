@@ -11,7 +11,7 @@ namespace SB.DAL.Models
 		//public int Id { get; set; }
 		public string Name { get; set; }
 		public string Email { get; set; }
-		private string Password { get; set; }
+		public string Password { get; set; }
 		public string Tags { get; set; }
 		public User(string pass) 
 		{
