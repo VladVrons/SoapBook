@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\Iistpage.html",
+      "PackagePath": "staticwebassets\\Iistpage.html"
+    },
+    {
       "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\css\\homepage.css",
       "PackagePath": "staticwebassets\\css\\homepage.css"
     },
@@ -11,10 +15,6 @@
     {
       "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\editprofile.html",
       "PackagePath": "staticwebassets\\editprofile.html"
-    },
-    {
-      "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\homepage.html",
-      "PackagePath": "staticwebassets\\homepage.html"
     },
     {
       "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\img\\god`s_creation.jpg",
@@ -33,12 +33,28 @@
       "PackagePath": "staticwebassets\\js\\homepage.jsx"
     },
     {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\js\\postSearch.js",
+      "PackagePath": "staticwebassets\\js\\postSearch.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\js\\search.js",
+      "PackagePath": "staticwebassets\\js\\search.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\listpage.html",
+      "PackagePath": "staticwebassets\\listpage.html"
+    },
+    {
       "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\login.html",
       "PackagePath": "staticwebassets\\login.html"
     },
     {
       "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\message.html",
       "PackagePath": "staticwebassets\\message.html"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\noresults.html",
+      "PackagePath": "staticwebassets\\noresults.html"
     },
     {
       "Id": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\userprofile.html",

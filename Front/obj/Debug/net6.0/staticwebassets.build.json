@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LV11UbiS/6ABVF92YRlUKKiW22K523HvPTFjp2R0AwI=",
+  "Hash": "+wzRm/KbrGVG6mDPlGjVedGLOYcuLlw1BCgS7ocbBrg=",
   "Source": "Front",
   "BasePath": "_content/Front",
   "Mode": "Default",
@@ -68,12 +68,12 @@
       "OriginalItemSpec": "wwwroot\\editprofile.html"
     },
     {
-      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\homepage.html",
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\Iistpage.html",
       "SourceId": "Front",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\",
       "BasePath": "_content/Front",
-      "RelativePath": "homepage.html",
+      "RelativePath": "Iistpage.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -82,7 +82,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\homepage.html"
+      "OriginalItemSpec": "wwwroot\\Iistpage.html"
     },
     {
       "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\img\\god`s_creation.jpg",
@@ -153,6 +153,57 @@
       "OriginalItemSpec": "wwwroot\\js\\homepage.jsx"
     },
     {
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\js\\postSearch.js",
+      "SourceId": "Front",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\",
+      "BasePath": "_content/Front",
+      "RelativePath": "js/postSearch.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\postSearch.js"
+    },
+    {
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\js\\search.js",
+      "SourceId": "Front",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\",
+      "BasePath": "_content/Front",
+      "RelativePath": "js/search.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\search.js"
+    },
+    {
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\listpage.html",
+      "SourceId": "Front",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\",
+      "BasePath": "_content/Front",
+      "RelativePath": "listpage.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\listpage.html"
+    },
+    {
       "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\login.html",
       "SourceId": "Front",
       "SourceType": "Discovered",
@@ -185,6 +236,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\message.html"
+    },
+    {
+      "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\noresults.html",
+      "SourceId": "Front",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\",
+      "BasePath": "_content/Front",
+      "RelativePath": "noresults.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\noresults.html"
     },
     {
       "Identity": "C:\\Users\\asus\\Documents\\GitHub\\SoapBook\\Front\\wwwroot\\userprofile.html",

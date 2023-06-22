@@ -1,5 +1,6 @@
 ﻿using SB.DAL.Interfaces;
 using SB.DAL.Models;
+using System.Data.Entity;
 
 namespace SB.DAL.Repositories
 {
@@ -27,26 +28,21 @@ namespace SB.DAL.Repositories
 
         public User Get(string name)
         {
-            return Context.Set<User>().FirstOrDefault(m => m.Name == name);
-        }
+            //Console.WriteLine(Context.Set<User>().FirstOrDefault(m => m.Name == name).Email);
+            return new User("qwerty") { Name = "ghj" };
+		}
 
-        public List<User> GetAll()
+		public List<User> GetAll()
         {
             return Context.Set<User>().ToList();
         }
 
-        public User Update(User model)
+        public void Update(User model)
         {
-            var toUpdate = Context.Set<User>().FirstOrDefault(m => m.Email == model.Email);
-            if (toUpdate != null)
-            {
-                toUpdate = model;
-            }
-            Context.Update(toUpdate);
-            Context.SaveChanges();
-            return toUpdate;
+			Context.Entry(model).State = EntityState.Modified;
 
         }
-    }
+
+	}
 
 }

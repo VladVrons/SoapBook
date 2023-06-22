@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>Social Network Homepage</title>
@@ -12,67 +11,44 @@
         </div>
         <div class="search">
             <form id="s1s" method="post">
-
-
                 <input id='searchfield' type="text" name="txt" placeholder="Search...">
                 <input type="submit" value="Search" id="submitBtn">
-
             </form>
-
-
         </div>
 
         <nav>
             <ul>
                 <li><a href="index.html">Log Out</a></li>
 
-                <li><a id="username" href="#">Messages</a></li>
+                <li><a id="username" href="#">Vronskyi Vlad</a></li>
             </ul>
         </nav>
         <script>
-
-            fetch('/api/getname')
+            console.log("name")
+            fetch('/api/getanswer')
                 .then(response => response.json())
                 .then(data => {
 
-                    document.getElementById('username').innerText = data.name;
-                    document.getElementById('usernameprof').innerText = data.name;;
-                    document.getElementById('tag').innerText = data.tags;
-                    document.getElementById('email').innerText = data.email;
+                    document.getElementById('username').innerText = data.Mytxt;
+                    //document.getElementById('usernameprof').innerText = data.name;;
+                    //document.getElementById('tag').innerText = data.tags;
+                    //document.getElementById('email').innerText = data.email;
                 })
                 .catch(error => {
                     // Обробка помилок
                     console.error('Помилка:', error);
                 });
-
         </script>
     </header>
     <main>
+
         <section class="news-feed">
-            <article class="post">
-                <div class="post-header">
-                    <img src="img/profile_pic.png" alt="Profile Picture">
-                    <h3 id="usernameprof">User Name</h3>
-
-                    <span id="email">1 hour ago</span>
-                </div>
-                <div class="post-content">
-                    <p>My interests:</p>
-                    <p id="tag"> </p>
-                </div>
-                <div class="post-footer">
-                    <ul>
-                        <li><a href="editprofile.html">Edit</a></li>
-
-                    </ul>
-                </div>
-
-            </article>
-
+            <h3 id="searchHeader">Search results:</h3>
+            <br />
+            <h3 id="searchHeader">No users found</h3>
 
         </section>
     </main>
-
     <footer>
         <ul>
             <li><a href="#">About</a></li>
@@ -80,7 +56,7 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </footer>
-    <script src="js/search.js"></script>
+
     <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/16.11.0/umd/react.development.js"></script>
     <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.11.0/umd/react-dom.development.js"></script>
     <script src="js/homepage.jsx"></script>

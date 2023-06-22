@@ -13,12 +13,12 @@ namespace FrontEnd.Controllers
 	{
 		//public UserService userService { get; set; }
 		static readonly List<UserModel> users;
-		static UserService userService = new UserService();
+		static UserService userService = new UserService("localDb");
 		//public User user;
 		
 		static UsersController()
 		{
-			
+			//users = userService.UoW.Users.GetAll()
 			users = new List<UserModel>
 			{
 				new UserModel("123") { Email = "soap@gmail.com", Name="Tyler", Tags="fight, smoke"},
@@ -39,6 +39,11 @@ namespace FrontEnd.Controllers
 				Email = userService.activeUser.Email,
 				Tags = userService.activeUser.Tags
 			};
+			if(user.Name == "Tyler")
+			{
+				user.Email = "tylerD@gmail.com";
+				user.Tags = "Fight. Soap.";
+			}
 			return user;
 		}
 
@@ -98,6 +103,6 @@ namespace FrontEnd.Controllers
 			return Ok(user);
 		}
 
-
+		
 	}
 }

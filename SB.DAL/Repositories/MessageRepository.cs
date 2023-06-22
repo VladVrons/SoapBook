@@ -34,5 +34,15 @@ namespace SB.DAL.Repositories
 		{
 			throw new NotImplementedException();
 		}
+
+		User IRepository<Message>.Get(string name)
+		{
+			throw new NotImplementedException();
+		}
+
+		void IRepository<Message>.Update(Message model)
+		{
+			throw new NotImplementedException();
+		}
 	}
 }

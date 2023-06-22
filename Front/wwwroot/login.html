@@ -27,7 +27,6 @@
 
                 // Collect form data
                 const formData = new FormData(form);
-
                 // Send POST request to the backend API endpoint
                 fetch('/api/login', {
                     method: 'POST',
@@ -35,7 +34,7 @@
                 })
                     .then(response => {
                         if (response.ok) {
-                            
+                          
                             // Redirect to the front page (homepage.html)
                             window.location.href = 'userprofile.html';
                         } else {

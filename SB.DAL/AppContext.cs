@@ -23,7 +23,12 @@ namespace SB.DAL
 	{
 		protected override void Seed(AppContext db)
 		{
-			db.Users.Add(new User("1234") { Email="342312", Name="weq"  }); ; ;
+			Console.WriteLine("seed");
+			var u1 = new User("1234") { Email = "342312", Name = "user1" };
+			var u2 = new User("1234") { Email = "342312", Name = "user2" };
+			db.Users.Add(u1);
+			db.Users.Add(u2);
+			db.Messages.Add(new Message(u1, u2, "hello world"));
 			db.SaveChanges();
 		}
 	}

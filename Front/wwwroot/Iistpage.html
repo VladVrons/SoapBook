@@ -10,77 +10,61 @@
             <h1>SoapBook</h1>
         </div>
         <div class="search">
-            <input type="text" placeholder="Search...">
-            <button>Search</button>
+            <form id="s1s" method="post">
+                <input id='searchfield' type="text" name="txt" placeholder="Search...">
+                <input type="submit" value="Search" id="submitBtn">
+            </form>
         </div>
 
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-            
+                <li><a href="index.html">Log Out</a></li>
+
                 <li><a id="username" href="#">Vronskyi Vlad</a></li>
             </ul>
         </nav>
         <script>
-            
+            console.log("name")
             fetch('/api/getname')
                 .then(response => response.json())
                 .then(data => {
-                    // Тут ви можете використовувати отримані дані
-                    alert(typeof (data));
-                    console.log(data);
-                    //document.getElementById('username').innerText = String(data).toUpperCase;
+
+                    document.getElementById('username').innerText = data.name;
+                    //document.getElementById('usernameprof').innerText = data.name;;
+                    //document.getElementById('tag').innerText = data.tags;
+                    //document.getElementById('email').innerText = data.email;
                 })
                 .catch(error => {
                     // Обробка помилок
                     console.error('Помилка:', error);
                 });
-
         </script>
     </header>
-    <main >
+    <main>
+
         <section class="news-feed">
-            <h3>Search results:</h3>
+            <h3 id="searchHeader">Search results:</h3>
             <br />
-            <article class="post">
+            <article id="f1" class="post">
                 <div class="post-header">
                     <img src="img/profile_pic.png" alt="Profile Picture">
-                    <h3 id="usernameprof">Tyler</h3>
+                    <h3 id="usernameprof">Vronskyi Vlad</h3>
 
-                    <span id="email">ed_n@gmail.com</span>
+                    <span id="email">v.vronskyi@lll.kpi.ua</span>
                 </div>
                 <div class="post-content">
                     <p>Interests:</p>
-                    <p id="tag"> Fight. Soap. </p>
+                    <p id="tag"> Diploma writing </p>
                 </div>
                 <div class="post-footer">
                     <ul>
-                        <li><a href="editprofile.html">Message</a></li>
-
+                        <li><a href="message.html">Message</a></li>
                     </ul>
                 </div>
 
             </article>
 
-            <article class="post">
-                <div class="post-header">
-                    <img src="img/profile_pic.png" alt="Profile Picture">
-                    <h3 id="usernameprof">Ed Norton</h3>
-
-                    <span id="email">ed_n@gmail.com</span>
-                </div>
-                <div class="post-content">
-                    <p>Interests:</p>
-                    <p id="tag"> Ikea. Fight. </p>
-                </div>
-                <div class="post-footer">
-                    <ul>
-                        <li><a href="editprofile.html">Message</a></li>
-
-                    </ul>
-                </div>
-
-            </article>
+            
 
         </section>
     </main>
@@ -91,7 +75,7 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </footer>
-    
+
     <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/16.11.0/umd/react.development.js"></script>
     <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.11.0/umd/react-dom.development.js"></script>
     <script src="js/homepage.jsx"></script>

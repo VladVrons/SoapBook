@@ -17,7 +17,7 @@
 
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Log Out</a></li>
 
                 <li><a id="username" href="#">Messages</a></li>
             </ul>
@@ -41,6 +41,37 @@
         <section class="news-feed">
             <article class="post">
                 <h3 id="usernameprof">Tyler</h3>
+                <script>
+                    console.log("name")
+                    fetch('/api/getname')
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.name=="Tyler"){
+                                document.getElementById('usernameprof').innerText = "Vronskyi Vlad";
+                                var messagesDiv = document.getElementById('messages');
+                                var message = "Vronskyi Vlad: " + "Hello";
+                                if (message.trim() !== '') {
+                                    var messageElement = document.createElement('div');
+                                    messageElement.classList.add('message');
+                                    messageElement.textContent = message;
+                                    messageElement.className = 'post';
+                                    messageElement.style.padding = "5px";
+                                    messageElement.style.borderColor = "AAA000";
+                                    //messageElement.style.backgroundColor = "AA0000";
+                                    messageElement.style.marginBottom = "10px";
+                                    messagesDiv.appendChild(messageElement);
+                                    messageInput.value = '';
+
+                                }
+                            }
+                            
+                        })
+                        .catch(error => {
+                            // Обробка помилок
+                            console.error('Помилка:', error);
+                        });
+                   
+                </script>
                 <div class="container">
 
                     <div class="messages" id="messages">
@@ -48,25 +79,41 @@
                     </div>
 
                 </div>
-                <div class="input-container">
-                    <input type="text" id="message-input" placeholder="Type your message">
-                    <button id="send-button">Send</button>
-                </div>
+
                 <script>
+                    
                     document.addEventListener('DOMContentLoaded', function () {
                         var sendButton = document.getElementById('send-button');
                         var messageInput = document.getElementById('message-input');
                         var messagesDiv = document.getElementById('messages');
-
+                       
                         sendButton.addEventListener('click', function () {
-                            var message = messageInput.value;
+                            var message = "Me: " + messageInput.value;
+                            
                             if (message.trim() !== '') {
                                 var messageElement = document.createElement('div');
                                 messageElement.classList.add('message');
                                 messageElement.textContent = message;
                                 messageElement.className = 'post';
+                                messageElement.style.padding = "5px";
+                                messageElement.style.marginBottom = "10px";
                                 messagesDiv.appendChild(messageElement);
                                 messageInput.value = '';
+
+                                if (message == "Me: Hello") {
+                                    var delayInMilliseconds = 5000; //1 second
+
+                                    setTimeout(function () {
+                                        var messageElement = document.createElement('div');
+                                        messageElement.classList.add('message');
+                                        messageElement.textContent = "Tyler: Hi, Vlad";
+                                        messageElement.className = 'post';
+                                        messageElement.style.padding = "5px";
+                                        messageElement.style.marginBottom = "10px";
+                                        messagesDiv.appendChild(messageElement);
+                                        messageInput.value = '';
+                                    }, delayInMilliseconds);
+}
                             }
                         });
                     });
@@ -74,13 +121,17 @@
                 </script>
 
             </article>
-
+            <div class="input-container">
+                <input type="text" id="message-input" placeholder="Type your message">
+                <button id="send-button">Send</button>
+            </div>
 
         </section>
     </main>
+    <br />
     <footer>
         <ul>
-            <li><a href="#">About</a></li>
+            <li><a href="https://github.com/VladVrons/SoapBook" target="_blank">About</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
